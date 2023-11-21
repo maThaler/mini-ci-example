@@ -32,5 +32,5 @@ jobs:
         run: |
           go test -v ./...
           CGO_ENABLED=0 GOARCH=amd64 go build -o demo
-			 - name: Set up Docker Buildx
-  			 uses: docker/setup-buildx-action@v3
+      - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
